@@ -1,0 +1,28 @@
+.job {
+  position: relative;
+}
+
+.job::before,
+.certification::before {
+  content: "";
+  display: block;
+  background-color: black;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  position: absolute;
+  /* z-index: 10; */
+}
+
+.job::before {
+  left: -8px;
+}
+
+.certification {
+  position: relative;
+}
+
+.certification::before {
+  right: -8px;
+  z-index: 1;
+}
