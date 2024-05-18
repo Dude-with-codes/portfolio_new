@@ -3,7 +3,8 @@
 }
 
 .job::before,
-.certification::before {
+.certification::before,
+.qualification::before {
   content: "";
   display: block;
   background-color: black;
@@ -18,11 +19,17 @@
   left: -8px;
 }
 
-.certification {
+.certification,
+.qualification {
   position: relative;
 }
 
 .certification::before {
   right: -8px;
+  z-index: 1;
+}
+
+.qualification::before {
+  left: 1px;
   z-index: 1;
 }
